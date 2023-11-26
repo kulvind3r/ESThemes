@@ -1,0 +1,20 @@
+<theme>
+  <formatVersion>4</formatVersion>
+  <include>./../theme.xml</include>
+  <view name="basic, detailed, video, grid">
+    <text name="nameLabel" extra="true">
+      <text>tic80</text>
+    </text>
+  </view>
+  <view name="system">
+    <text name="sys_line2" extra="true">
+      <text>tic80</text>
+    </text>
+    <text name="shortdescription" extra="true">
+      <text>Video Games System</text>
+    </text>
+    <text name="longdescription" extra="true">
+      <text>Video Games System</text>
+    </text>
+  </view>
+</theme>

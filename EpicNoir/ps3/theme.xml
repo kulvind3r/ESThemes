@@ -1,0 +1,23 @@
+<theme>
+  <formatVersion>4</formatVersion>
+  <include>./../theme.xml</include>
+  <view name="basic, detailed, video, grid">
+    <text name="nameLabel" extra="true">
+      <text>Sony Playstation 3</text>
+    </text>
+  </view>
+  <view name="system">
+    <text name="sys_line1" extra="true">
+      <text>Sony</text>
+    </text>
+    <text name="sys_line2" extra="true">
+      <text>Playstation 3</text>
+    </text>
+    <text name="shortdescription" extra="true">
+      <text>2006</text>
+    </text>
+    <text name="longdescription" extra="true">
+      <text>The PlayStation 3 (PS3) is a home video game console developed by Sony Computer Entertainment. The successor to the PlayStation 2, it is part of the PlayStation brand of consoles. </text>
+    </text>
+  </view>
+</theme>
