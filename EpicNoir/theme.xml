@@ -1,7 +1,7 @@
 <theme>
     <formatVersion>4</formatVersion>
 	<variables>
-		<grid.itemspacing.px>12 * ${screen.height} / 1080</grid.itemspacing.px>
+		<grid.itemspacing.px>30 * ${screen.height} / 1080</grid.itemspacing.px>
 	</variables>
     <view name="screen">
         <text name="clock">
@@ -188,7 +188,7 @@
 			<cellProportion if="{system.name} == 'gbc'">1</cellProportion>
 			<cellProportion if="{system.name} == 'snes'">1.65</cellProportion>
 			<imageSource>cover</imageSource>
-			<autoLayoutSelectedZoom>1.04</autoLayoutSelectedZoom>
+			<autoLayoutSelectedZoom>1.15</autoLayoutSelectedZoom>
 			<scrollbarColor>585858</scrollbarColor>
 			<scrollbarCorner>0.49</scrollbarCorner>
 			<scrollbarSize>0.005</scrollbarSize>
@@ -196,7 +196,7 @@
 		</imagegrid>
 		<gridtile name="default">
 			<backgroundCornerSize>0 0</backgroundCornerSize>
-			<imageColor>FFFFFF99</imageColor>
+			<imageColor>FFFFFFFF</imageColor>
 			<backgroundEdgeColor>80808000</backgroundEdgeColor>
 			<backgroundCenterColor>80808000</backgroundCenterColor>
 			<padding>3 3</padding>
