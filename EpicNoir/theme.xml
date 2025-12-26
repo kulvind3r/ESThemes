@@ -1,5 +1,8 @@
 <theme>
     <formatVersion>4</formatVersion>
+	<variables>
+		<grid.itemspacing.px>12 * ${screen.height} / 1080</grid.itemspacing.px>
+	</variables>
     <view name="screen">
         <text name="clock">
 			<origin>1 1</origin>
@@ -139,16 +142,14 @@
             <pos>0.15 0.61</pos>
             <maxSize>0.32 0.32</maxSize>
         </image>
-    </view>  
-    <view name="basic, grid">
+    </view>
+    <view name="basic">
 		<image name="background" extra="true">
 			<tile>false</tile>
 			<path>./_art/gamelist-basic-bg.jpg</path>
 			<size>1 1</size>
 			<pos>0 0</pos>
 		</image>
-	</view>
-    <view name="basic">
 		<textlist name="gamelist">
 			<selectorColor>CA0C0C</selectorColor>
 			<selectedColor>EFECEC</selectedColor>
@@ -165,16 +166,156 @@
 		</textlist>
 	</view>
     <view name="grid">
+		<image name="background" extra="true">
+			<tile>false</tile>
+			<path>./_art/grid-bg.jpg</path>
+			<size>1 1</size>
+			<pos>0 0</pos>
+		</image>
+		<imagegrid name="gamegrid">
+			<margin>${grid.itemspacing.px}</margin>
+			<padding>0.011 0.011 0.011 0.011</padding>
+			<animateSelection></animateSelection>
+			<origin>0 0</origin>
+			<size>0.625 0.8</size>
+			<pos>0.02 0.1</pos>
+			<autoLayout>0 3</autoLayout>
+			<cellProportion>0.66</cellProportion>
+			<cellProportion if="{system.name} == 'gb'">1</cellProportion>
+			<cellProportion if="{system.name} == 'gba'">1</cellProportion>
+			<cellProportion if="{system.name} == 'psx'">1</cellProportion>
+			<cellProportion if="{system.name} == 'dreamcast'">1</cellProportion>
+			<cellProportion if="{system.name} == 'gbc'">1</cellProportion>
+			<cellProportion if="{system.name} == 'snes'">1.65</cellProportion>
+			<imageSource>cover</imageSource>
+			<autoLayoutSelectedZoom>1.04</autoLayoutSelectedZoom>
+			<scrollbarColor>585858</scrollbarColor>
+			<scrollbarCorner>0.49</scrollbarCorner>
+			<scrollbarSize>0.005</scrollbarSize>
+			<scrollbarAlignment>right</scrollbarAlignment>
+		</imagegrid>
 		<gridtile name="default">
-			<backgroundColor>181818</backgroundColor>
+			<backgroundCornerSize>0 0</backgroundCornerSize>
+			<imageColor>FFFFFF99</imageColor>
+			<backgroundEdgeColor>80808000</backgroundEdgeColor>
+			<backgroundCenterColor>80808000</backgroundCenterColor>
+			<padding>3 3</padding>
 		</gridtile>
 		<gridtile name="selected">
-			<backgroundColor>FFFFFFA0</backgroundColor>
-			<padding>4 4</padding>
+			<backgroundEdgeColor>CA0C0C00</backgroundEdgeColor>
+			<backgroundCenterColor>CA0C0C00</backgroundCenterColor>
+			<imageColor>FFFFFFFF</imageColor>
 		</gridtile>
-		<imagegrid name="gamegrid">
-			<autoLayout>3 3</autoLayout>
-		</imagegrid>
+		<image name="md_marquee">
+            <tile>false</tile>
+            <origin>0.5 0.5</origin>
+            <pos>0.835 0.575</pos>
+            <maxSize>0.3 0.1</maxSize>
+        </image>
+		<text name="txt_descript" extra="true">
+            <text>Description:</text>
+            <fontPath>./_art/Acre.otf</fontPath>
+            <alignment>left</alignment>
+            <fontSize>0.0250</fontSize>
+            <color>CA0C0C</color>
+            <origin>0 0</origin>
+            <pos>0.685 0.65</pos>
+            <size>0.10 0.07</size>
+        </text>
+        <text name="md_description">
+            <fontPath>./_art/Acre.otf</fontPath>
+            <color>818181</color>
+            <fontSize>0.02</fontSize>
+            <alignment>left</alignment>
+            <forceUppercase>0</forceUppercase>
+            <lineSpacing>1.15</lineSpacing>
+            <pos>0.685 0.715</pos>
+            <size>0.3 0.09</size>
+        </text>
+        <rating name="md_rating">
+            <pos>0.91 0.67</pos>
+            <size>0 0.028</size>
+            <filledPath>./_art/var/star_filled.svg</filledPath>
+            <unfilledPath>./_art/var/star_hollow.svg</unfilledPath>
+        </rating>
+        <text name="txt_release" extra="true">
+			<text>Released:</text>
+			<fontPath>./_art/Acre.otf</fontPath>
+			<alignment>left</alignment>
+			<fontSize>0.02</fontSize>
+			<color>CA0C0C</color>
+			<origin>0 0</origin>
+			<pos>0.685 0.8</pos>
+            <size>0.10 0.07</size>
+		</text>
+        <datetime name="md_releasedate">
+			<format>%m/%Y</format>
+			<fontPath>./_art/Acre.otf</fontPath>
+			<fontSize>0.02</fontSize>
+			<alignment>right</alignment>
+			<color>818181</color>
+			<origin>0 0</origin>
+			<pos>0.74 0.8</pos>
+            <size>0.05 0.07</size>
+		</datetime>
+		<text name="txt_lastplayed" extra="true">
+			<text>Last Played:</text>
+			<fontPath>./_art/Acre.otf</fontPath>
+			<alignment>left</alignment>
+			<fontSize>0.02</fontSize>
+			<color>CA0C0C</color>
+			<origin>0 0</origin>
+			<pos>0.845 0.8</pos>
+			<size>0.10 0.07</size>
+		</text>
+		<datetime name="md_lastplayed">
+			<fontPath>./_art/Acre.otf</fontPath>
+			<fontSize>0.02</fontSize>
+			<alignment>right</alignment>
+			<color>818181</color>
+			<origin>0 0</origin>
+			<pos>0.885 0.8</pos>
+			<size>0.10 0.07</size>
+		</datetime>
+        <text name="txt_playcount" extra="true">
+			<text>Play Count:</text>
+			<fontPath>./_art/Acre.otf</fontPath>
+			<alignment>left</alignment>
+			<fontSize>0.02</fontSize>
+			<color>CA0C0C</color>
+			<origin>0 0</origin>
+			<pos>0.685 0.85</pos>
+			<size>0.10 0.07</size>
+		</text>
+		<text name="md_playcount">
+			<alignment>center</alignment>
+			<fontPath>./_art/Acre.otf</fontPath>
+			<fontSize>0.02</fontSize>
+			<alignment>right</alignment>
+			<color>818181</color>
+			<origin>0 0</origin>
+			<pos>0.745 0.85</pos>
+			<size>0.02 0.07</size>
+		</text>
+		<text name="txt_playtime" extra="true">
+			<text>Play Time:</text>
+			<fontPath>./_art/Acre.otf</fontPath>
+			<alignment>left</alignment>
+			<fontSize>0.02</fontSize>
+			<color>CA0C0C</color>
+			<origin>0 0</origin>
+			<pos>0.845 0.85</pos>
+			<size>0.10 0.07</size>
+		</text>
+		<text name="md_gametime">
+			<fontPath>./_art/Acre.otf</fontPath>
+			<fontSize>0.02</fontSize>
+			<alignment>right</alignment>
+			<color>818181</color>
+			<origin>0 0</origin>
+			<pos>0.885 0.85</pos>
+			<size>0.10 0.07</size>
+		</text>
 	</view>
     <view name="detailed, video">
         <image name="background" extra="true">
@@ -343,6 +484,15 @@
                 <delay>1.5</delay>
                 <showSnapshotNoVideo>true</showSnapshotNoVideo>
                 <showSnapshotDelay>true</showSnapshotDelay>
+            </video>
+        </view>
+		<view name="grid">
+            <video name="md_video">
+                <origin>0.5 0.5</origin>
+                <pos>0.835 0.3</pos>
+                <maxSize>0.3 0.4 </maxSize>
+				<delay>0.0001</delay>
+				<showSnapshotNoVideo>true</showSnapshotNoVideo>
             </video>
         </view>
     </feature>
