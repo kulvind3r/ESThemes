@@ -191,10 +191,10 @@
             <secondaryColor>818181</secondaryColor>
             <fontPath>./_art/Acre.otf</fontPath>
             <alignment>left</alignment>
-            <pos>0.01 0.095</pos>
+            <pos>0.01 0.0825</pos>
             <size>0.31 0.85</size>
             <fontSize>0.03</fontSize>
-            <lineSpacing>1.7</lineSpacing>
+            <lineSpacing>1.675</lineSpacing>
         </textlist>
         <text name="txt_descript" extra="true">
             <text>Description:</text>
@@ -203,7 +203,7 @@
             <fontSize>0.0250</fontSize>
             <color>CA0C0C</color>
             <origin>0 0</origin>
-            <pos>0.439 0.720</pos>
+            <pos>0.4225 0.725</pos>
             <size>0.10 0.07</size>
         </text>
         <text name="md_description">
@@ -213,11 +213,11 @@
             <alignment>left</alignment>
             <forceUppercase>0</forceUppercase>
             <lineSpacing>1.15</lineSpacing>
-            <pos>0.439 0.787</pos>
-            <size>0.464 0.09</size>
+            <pos>0.4225 0.787</pos>
+            <size>0.49125 0.09</size>
         </text>
         <rating name="md_rating">
-            <pos>0.820 0.742</pos>
+            <pos>0.835 0.745</pos>
             <size>0 0.028</size>
             <filledPath>./_art/var/star_filled.svg</filledPath>
             <unfilledPath>./_art/var/star_hollow.svg</unfilledPath>
@@ -229,7 +229,7 @@
 			<fontSize>0.02</fontSize>
 			<color>CA0C0C</color>
 			<origin>0 0</origin>
-			<pos>0.439 0.870</pos>
+			<pos>0.4225 0.870</pos>
             <size>0.10 0.07</size>
 		</text>
         <datetime name="md_releasedate">
@@ -238,8 +238,26 @@
 			<fontSize>0.02</fontSize>
 			<color>818181</color>
 			<origin>0 0</origin>
-			<pos>0.495 0.870</pos>
+			<pos>0.4775 0.870</pos>
             <size>0.10 0.07</size>
+		</datetime>
+		<text name="txt_lastplayed" extra="true">
+			<text>Last Played:</text>
+			<fontPath>./_art/Acre.otf</fontPath>
+			<alignment>center</alignment>
+			<fontSize>0.02</fontSize>
+			<color>CA0C0C</color>
+			<origin>0 0</origin>
+			<pos>0.52 0.870</pos>
+			<size>0.10 0.07</size>
+		</text>
+		<datetime name="md_lastplayed">
+			<fontPath>./_art/Acre.otf</fontPath>
+			<fontSize>0.02</fontSize>
+			<color>818181</color>
+			<origin>0 0</origin>
+			<pos>0.605 0.870</pos>
+			<size>0.10 0.07</size>
 		</datetime>
         <text name="txt_playcount" extra="true">
 			<text>Play Count:</text>
@@ -248,7 +266,7 @@
 			<fontSize>0.02</fontSize>
 			<color>CA0C0C</color>
 			<origin>0 0</origin>
-			<pos>0.610 0.870</pos>
+			<pos>0.675 0.870</pos>
 			<size>0.10 0.07</size>
 		</text>
 		<text name="md_playcount">
@@ -257,7 +275,7 @@
 			<fontSize>0.02</fontSize>
 			<color>818181</color>
 			<origin>0 0</origin>
-			<pos>0.650 0.870</pos>
+			<pos>0.715 0.870</pos>
 			<size>0.10 0.07</size>
 		</text>
 		<text name="txt_playtime" extra="true">
@@ -267,7 +285,7 @@
 			<fontSize>0.02</fontSize>
 			<color>CA0C0C</color>
 			<origin>0 0</origin>
-			<pos>0.745 0.870</pos>
+			<pos>0.75 0.870</pos>
 			<size>0.10 0.07</size>
 		</text>
 		<text name="md_gametime">
@@ -276,7 +294,7 @@
 			<fontSize>0.02</fontSize>
 			<color>818181</color>
 			<origin>0 0</origin>
-			<pos>0.795 0.870</pos>
+			<pos>0.81 0.870</pos>
 			<size>0.10 0.07</size>
 		</text>
     </view>
@@ -312,16 +330,16 @@
         <image name="md_image">
             <tile>false</tile>
             <origin>0.5 0.5</origin>
-            <pos>0.67 0.42</pos>
-            <maxSize>0.5 0.6</maxSize>
+            <pos>0.667 0.4075</pos>
+            <maxSize>0.55 0.65</maxSize>
         </image>
     </view>
     <feature supported="video">
         <view name="video">
             <video name="md_video">
                 <origin>0.5 0.5</origin>
-                <pos>0.67 0.42</pos>
-                <maxSize>0.5 0.6</maxSize>
+                <pos>0.667 0.4075</pos>
+                <maxSize>0.55 0.65</maxSize>
                 <delay>1.5</delay>
                 <showSnapshotNoVideo>true</showSnapshotNoVideo>
                 <showSnapshotDelay>true</showSnapshotDelay>
