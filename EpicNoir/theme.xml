@@ -2,38 +2,41 @@
     <formatVersion>4</formatVersion>
 	<variables>
 		<grid.itemspacing.px>30 * ${screen.height} / 1080</grid.itemspacing.px>
+		<mainRed>CA0C0C</mainRed>
+        <mainGray>838383</mainGray>
+        <mainWhite>FFFFFF</mainWhite>
 	</variables>
     <view name="screen">
         <text name="clock">
 			<origin>1 1</origin>
 			<pos>0.985 0.985</pos>
 			<size>0.20 0</size>
-			<fontSize>0.024</fontSize>
+			<fontSize>0.025</fontSize>
 			<fontPath>./_art/Acre.otf</fontPath>
-			<color>FFFFFFA0</color>
+			<color>${mainWhite}A0</color>
 		</text>
     </view>
     <view name="menu">
 		<menuBackground name="menubg">
-			<color>121212BB</color>
+			<color>191919CC</color>
 			<cornerSize>32 32</cornerSize>
 		</menuBackground>
 		<menuText name="menutitle">
 			<fontPath>./_art/Acre.otf</fontPath>
-			<fontSize>0.06</fontSize>
-			<color>CA0C0C</color>
+			<fontSize>0.055</fontSize>
+			<color>${mainRed}</color>
 		</menuText>
 		<menuText name="menutext">
 			<fontPath>./_art/BebasNeue.otf</fontPath>
-			<fontSize>0.05</fontSize>
-			<color>818181</color>
-			<selectorColor>CA0C0C</selectorColor>
-			<separatorColor>272727</separatorColor>
+			<fontSize>0.045</fontSize>
+			<color>${mainGray}</color>
+			<selectorColor>${mainRed}</selectorColor>
+			<separatorColor>${mainGray}44</separatorColor>
 		</menuText>
 		<menuText name="menufooter">
 			<fontPath>./_art/Acre.otf</fontPath>
-			<fontSize>0.03</fontSize>
-			<color>CA0C0C</color>
+			<fontSize>0.035</fontSize>
+			<color>${mainRed}</color>
 		</menuText>
 	</view>
     <view name="system">
@@ -71,27 +74,27 @@
         <text name="sys_line1" extra="true">
             <fontPath>./_art/BebasNeue.otf</fontPath>
             <alignment>left</alignment>
-            <fontSize>0.048</fontSize>
+            <fontSize>0.05</fontSize>
             <forceUppercase>1</forceUppercase>
             <origin>0 0</origin>
             <pos>0.15 0.142</pos>
-            <color>FFFFFF</color>
+            <color>${mainWhite}</color>
         </text>
         <text name="sys_line2" extra="true">
             <fontPath>./_art/BebasNeue.otf</fontPath>
             <alignment>left</alignment>
-            <fontSize>0.18</fontSize>
+            <fontSize>0.2</fontSize>
             <forceUppercase>1</forceUppercase>
             <origin>0 0</origin>
-            <pos>0.147 0.16</pos>
-            <color>FFFFFF</color>
+            <pos>0.1475 0.16</pos>
+            <color>${mainWhite}</color>
         </text>
         <text name="shortdescription" extra="true">
             <fontPath>./_art/Acre.otf</fontPath>
             <alignment>left</alignment>
             <forceUppercase>0</forceUppercase>
-            <fontSize>0.021</fontSize>
-            <color>9b9a9a</color>
+            <fontSize>0.025</fontSize>
+            <color>${mainGray}</color>
             <origin>0 0</origin>
             <pos>0.15 0.1055</pos>
             <size>0.320 0.033</size>
@@ -101,39 +104,34 @@
             <alignment>left</alignment>
             <backgroundColor>00000000</backgroundColor>
             <forceUppercase>1</forceUppercase>
-            <color>A3332D</color>
+            <color>${mainRed}</color>
             <origin>0 0</origin>
-            <pos>0.15 0.3611</pos>
+            <pos>0.15 0.38</pos>
             <size>0.200 0.039</size>
-            <fontSize>0.0315</fontSize>
+            <fontSize>0.025</fontSize>
         </text>
         <text name="longdescription" extra="true">
             <fontPath>./_art/Acre.otf</fontPath>
             <alignment>left</alignment>
             <forceUppercase>0</forceUppercase>
-            <fontSize>0.021</fontSize>
-            <color>8F8F8F</color>
+            <fontSize>0.025</fontSize>
+            <color>${mainGray}</color>
             <lineSpacing>1.18</lineSpacing>
             <origin>0 0</origin>
-            <pos>0.15 0.360</pos>
-            <size>0.28 0.20</size>
+            <pos>0.15 0.375</pos>
+            <size>0.35 0.20</size>
         </text>
         <image name="buttonA" extra="true">
             <path>./_art/var/button.svg</path>
             <tile>false</tile>
             <origin>0 0</origin>
-            <pos>0.15 0.545</pos>
+            <pos>0.15 0.55</pos>
             <size>0 0.044</size>
         </image>
-        <helpsystem name="help">
+		<helpsystem name="help">
             <fontPath>./_art/Acre.otf</fontPath>
-            <fontSize>0.02</fontSize>
-            <origin>1 1</origin>
-            <!--0 0-->
-            <pos>0 0</pos>
-            <!--0.0890 0.6283-->
-            <textColor>F8F8F8</textColor>
-            <iconColor>F8F8F8</iconColor>
+            <color>${mainGray}</color>
+			<fontSize>0.025</fontSize>
         </helpsystem>
         <image name="controller" extra="true">
             <path>./_art/controllers/${system.theme}.png</path>
@@ -151,11 +149,10 @@
 			<pos>0 0</pos>
 		</image>
 		<textlist name="gamelist">
-			<selectorColor>CA0C0C</selectorColor>
-			<selectedColor>EFECEC</selectedColor>
+			<selectorColor>${mainRed}</selectorColor>
+			<selectedColor>${mainWhite}</selectedColor>
 			<selectorHeight>0.0475</selectorHeight>
-			<primaryColor>585858</primaryColor>
-			<secondaryColor>818181</secondaryColor>
+			<primaryColor>${mainGray}AA</primaryColor>
 			<fontPath>./_art/Acre.otf</fontPath>
 			<alignment>center</alignment>
 			<origin>0.5 0.5</origin>
@@ -180,31 +177,55 @@
 			<size>0.625 0.8</size>
 			<pos>0.02 0.1</pos>
 			<autoLayout>0 3</autoLayout>
-			<cellProportion>0.66</cellProportion>
-			<cellProportion if="{system.name} == 'gb'">1</cellProportion>
+			<cellProportion>0.73</cellProportion>
+			<cellProportion if="{system.name} == 'psp'">0.58</cellProportion>
 			<cellProportion if="{system.name} == 'gba'">1</cellProportion>
 			<cellProportion if="{system.name} == 'psx'">1</cellProportion>
 			<cellProportion if="{system.name} == 'dreamcast'">1</cellProportion>
 			<cellProportion if="{system.name} == 'gbc'">1</cellProportion>
+			<cellProportion if="{system.name} == 'megadrive'">0.71</cellProportion>
+			<cellProportion if="{system.name} == 'ps2'">0.71</cellProportion>
+			<cellProportion if="{system.name} == 'wii'">0.71</cellProportion>
+			<cellProportion if="{system.name} == 'gc'">0.72</cellProportion>
 			<cellProportion if="{system.name} == 'snes'">1.65</cellProportion>
 			<imageSource>cover</imageSource>
-			<autoLayoutSelectedZoom>1.15</autoLayoutSelectedZoom>
-			<scrollbarColor>585858</scrollbarColor>
+			<autoLayoutSelectedZoom>1.1</autoLayoutSelectedZoom>
+			<scrollbarColor>${mainGray}</scrollbarColor>
 			<scrollbarCorner>0.49</scrollbarCorner>
 			<scrollbarSize>0.005</scrollbarSize>
 			<scrollbarAlignment>right</scrollbarAlignment>
 		</imagegrid>
 		<gridtile name="default">
 			<backgroundCornerSize>0 0</backgroundCornerSize>
-			<imageColor>FFFFFFFF</imageColor>
-			<backgroundEdgeColor>80808000</backgroundEdgeColor>
-			<backgroundCenterColor>80808000</backgroundCenterColor>
+			<imageColor>${mainWhite}FF</imageColor>
+			<imageSizeMode>minSize</imageSizeMode>
+			<backgroundEdgeColor>${mainGray}</backgroundEdgeColor>
+			<backgroundCenterColor>${mainGray}</backgroundCenterColor>
 			<padding>3 3</padding>
+			
+			<image name="ArtShade" extra="true">
+				<origin>0 0</origin>
+				<pos>0 0</pos>
+				<size>1 1</size>
+				<zIndex>2</zIndex>
+				<visible>true</visible>
+				<color>000000</color>
+				<opacity>0.2</opacity>
+				<path>./_art/var/bg_color.png</path>
+				<storyboard event="activate">
+					<animation property="opacity" from="0.2" to="0" duration="150" mode="linear"/>
+				</storyboard>
+				<storyboard event="deactivate">
+					<animation property="opacity" from="0" to="0.2" duration="150" mode="linear"/>
+				</storyboard>
+				<scale>1.005</scale>
+				<zIndex>30</zIndex>
+			</image>
 		</gridtile>
 		<gridtile name="selected">
-			<backgroundEdgeColor>CA0C0C00</backgroundEdgeColor>
-			<backgroundCenterColor>CA0C0C00</backgroundCenterColor>
-			<imageColor>FFFFFFFF</imageColor>
+			<backgroundEdgeColor>${mainRed}</backgroundEdgeColor>
+			<backgroundCenterColor>${mainRed}</backgroundCenterColor>
+			<imageColor>${mainWhite}FF</imageColor>
 		</gridtile>
 		<image name="md_marquee">
             <tile>false</tile>
@@ -217,14 +238,14 @@
             <fontPath>./_art/Acre.otf</fontPath>
             <alignment>left</alignment>
             <fontSize>0.0250</fontSize>
-            <color>CA0C0C</color>
+            <color>${mainRed}</color>
             <origin>0 0</origin>
             <pos>0.685 0.65</pos>
             <size>0.10 0.07</size>
         </text>
         <text name="md_description">
             <fontPath>./_art/Acre.otf</fontPath>
-            <color>818181</color>
+            <color>${mainGray}</color>
             <fontSize>0.02</fontSize>
             <alignment>left</alignment>
             <forceUppercase>0</forceUppercase>
@@ -243,7 +264,7 @@
 			<fontPath>./_art/Acre.otf</fontPath>
 			<alignment>left</alignment>
 			<fontSize>0.02</fontSize>
-			<color>CA0C0C</color>
+			<color>${mainRed}</color>
 			<origin>0 0</origin>
 			<pos>0.685 0.8</pos>
             <size>0.10 0.07</size>
@@ -253,7 +274,7 @@
 			<fontPath>./_art/Acre.otf</fontPath>
 			<fontSize>0.02</fontSize>
 			<alignment>right</alignment>
-			<color>818181</color>
+			<color>${mainGray}</color>
 			<origin>0 0</origin>
 			<pos>0.74 0.8</pos>
             <size>0.05 0.07</size>
@@ -263,7 +284,7 @@
 			<fontPath>./_art/Acre.otf</fontPath>
 			<alignment>left</alignment>
 			<fontSize>0.02</fontSize>
-			<color>CA0C0C</color>
+			<color>${mainRed}</color>
 			<origin>0 0</origin>
 			<pos>0.845 0.8</pos>
 			<size>0.10 0.07</size>
@@ -272,7 +293,7 @@
 			<fontPath>./_art/Acre.otf</fontPath>
 			<fontSize>0.02</fontSize>
 			<alignment>right</alignment>
-			<color>818181</color>
+			<color>${mainGray}</color>
 			<origin>0 0</origin>
 			<pos>0.885 0.8</pos>
 			<size>0.10 0.07</size>
@@ -282,7 +303,7 @@
 			<fontPath>./_art/Acre.otf</fontPath>
 			<alignment>left</alignment>
 			<fontSize>0.02</fontSize>
-			<color>CA0C0C</color>
+			<color>${mainRed}</color>
 			<origin>0 0</origin>
 			<pos>0.685 0.85</pos>
 			<size>0.10 0.07</size>
@@ -292,7 +313,7 @@
 			<fontPath>./_art/Acre.otf</fontPath>
 			<fontSize>0.02</fontSize>
 			<alignment>right</alignment>
-			<color>818181</color>
+			<color>${mainGray}</color>
 			<origin>0 0</origin>
 			<pos>0.745 0.85</pos>
 			<size>0.02 0.07</size>
@@ -302,7 +323,7 @@
 			<fontPath>./_art/Acre.otf</fontPath>
 			<alignment>left</alignment>
 			<fontSize>0.02</fontSize>
-			<color>CA0C0C</color>
+			<color>${mainRed}</color>
 			<origin>0 0</origin>
 			<pos>0.845 0.85</pos>
 			<size>0.10 0.07</size>
@@ -311,7 +332,7 @@
 			<fontPath>./_art/Acre.otf</fontPath>
 			<fontSize>0.02</fontSize>
 			<alignment>right</alignment>
-			<color>818181</color>
+			<color>${mainGray}</color>
 			<origin>0 0</origin>
 			<pos>0.885 0.85</pos>
 			<size>0.10 0.07</size>
@@ -325,11 +346,10 @@
             <pos>0 0</pos>
         </image>
         <textlist name="gamelist">
-            <selectorColor>CA0C0C</selectorColor>
-            <selectedColor>EFECEC</selectedColor>
+            <selectorColor>${mainRed}</selectorColor>
+            <selectedColor>${mainWhite}</selectedColor>
             <selectorHeight>0.0475</selectorHeight>
-            <primaryColor>585858</primaryColor>
-            <secondaryColor>818181</secondaryColor>
+            <primaryColor>${mainGray}AA</primaryColor>
             <fontPath>./_art/Acre.otf</fontPath>
             <alignment>left</alignment>
             <pos>0.01 0.0825</pos>
@@ -342,14 +362,14 @@
             <fontPath>./_art/Acre.otf</fontPath>
             <alignment>left</alignment>
             <fontSize>0.0250</fontSize>
-            <color>CA0C0C</color>
+            <color>${mainRed}</color>
             <origin>0 0</origin>
             <pos>0.4225 0.725</pos>
             <size>0.10 0.07</size>
         </text>
         <text name="md_description">
             <fontPath>./_art/Acre.otf</fontPath>
-            <color>818181</color>
+            <color>${mainGray}</color>
             <fontSize>0.02</fontSize>
             <alignment>left</alignment>
             <forceUppercase>0</forceUppercase>
@@ -368,7 +388,7 @@
 			<fontPath>./_art/Acre.otf</fontPath>
 			<alignment>left</alignment>
 			<fontSize>0.02</fontSize>
-			<color>CA0C0C</color>
+			<color>${mainRed}</color>
 			<origin>0 0</origin>
 			<pos>0.4225 0.870</pos>
             <size>0.10 0.07</size>
@@ -377,7 +397,7 @@
 			<format>%m/%Y</format>
 			<fontPath>./_art/Acre.otf</fontPath>
 			<fontSize>0.02</fontSize>
-			<color>818181</color>
+			<color>${mainGray}</color>
 			<origin>0 0</origin>
 			<pos>0.4775 0.870</pos>
             <size>0.10 0.07</size>
@@ -387,7 +407,7 @@
 			<fontPath>./_art/Acre.otf</fontPath>
 			<alignment>center</alignment>
 			<fontSize>0.02</fontSize>
-			<color>CA0C0C</color>
+			<color>${mainRed}</color>
 			<origin>0 0</origin>
 			<pos>0.52 0.870</pos>
 			<size>0.10 0.07</size>
@@ -395,7 +415,7 @@
 		<datetime name="md_lastplayed">
 			<fontPath>./_art/Acre.otf</fontPath>
 			<fontSize>0.02</fontSize>
-			<color>818181</color>
+			<color>${mainGray}</color>
 			<origin>0 0</origin>
 			<pos>0.605 0.870</pos>
 			<size>0.10 0.07</size>
@@ -405,7 +425,7 @@
 			<fontPath>./_art/Acre.otf</fontPath>
 			<alignment>center</alignment>
 			<fontSize>0.02</fontSize>
-			<color>CA0C0C</color>
+			<color>${mainRed}</color>
 			<origin>0 0</origin>
 			<pos>0.675 0.870</pos>
 			<size>0.10 0.07</size>
@@ -414,7 +434,7 @@
 			<alignment>center</alignment>
 			<fontPath>./_art/Acre.otf</fontPath>
 			<fontSize>0.02</fontSize>
-			<color>818181</color>
+			<color>${mainGray}</color>
 			<origin>0 0</origin>
 			<pos>0.715 0.870</pos>
 			<size>0.10 0.07</size>
@@ -424,7 +444,7 @@
 			<fontPath>./_art/Acre.otf</fontPath>
 			<alignment>right</alignment>
 			<fontSize>0.02</fontSize>
-			<color>CA0C0C</color>
+			<color>${mainRed}</color>
 			<origin>0 0</origin>
 			<pos>0.75 0.870</pos>
 			<size>0.10 0.07</size>
@@ -433,7 +453,7 @@
 			<alignment>right</alignment>
 			<fontPath>./_art/Acre.otf</fontPath>
 			<fontSize>0.02</fontSize>
-			<color>818181</color>
+			<color>${mainGray}</color>
 			<origin>0 0</origin>
 			<pos>0.81 0.870</pos>
 			<size>0.10 0.07</size>
@@ -444,27 +464,28 @@
             <fontPath>./_art/Acre.otf</fontPath>
             <text>Select Game</text>
             <alignment>left</alignment>
-            <color>767676</color>
-            <fontSize>0.034</fontSize>
+            <color>${mainGray}</color>
+            <fontSize>0.025</fontSize>
             <origin>0 0</origin>
-            <pos>0.037 0</pos>
+            <pos>0.01 0</pos>
             <size>0.25 0.06</size>
         </text>
         <text name="nameLabel" extra="true">
             <fontPath>./_art/Acre.otf</fontPath>
             <alignment>center</alignment>
             <forceUppercase>1</forceUppercase>
-            <color>CA0C0C</color>
-            <fontSize>0.036</fontSize>
+            <color>${mainRed}</color>
+            <fontSize>0.035</fontSize>
             <origin>0.5 0.5</origin>
             <pos>0.5 0.027</pos>
             <size>0.25 0.06</size>
         </text>
         <helpsystem name="help">
             <origin>0 1</origin>
-            <pos>0.01 0.975</pos>
+            <pos>0.01 0.9775</pos>
 			<fontPath>./_art/Acre.otf</fontPath>
-			<fontSize>0.02</fontSize>
+			<fontSize>0.025</fontSize>
+			<color>${mainGray}</color>
         </helpsystem>
     </view>
     <view name="detailed">

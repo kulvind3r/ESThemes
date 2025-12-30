@@ -7,8 +7,11 @@
     </text>
   </view>
   <view name="system">
+	<text name="sys_line1" extra="true">
+      <text>SONY</text>
+    </text>
     <text name="sys_line2" extra="true">
-      <text>SONY PSP</text>
+      <text>PSP</text>
     </text>
     <text name="shortdescription" extra="true">
       <text>2004  ·  32-bit Handheld Console</text>
