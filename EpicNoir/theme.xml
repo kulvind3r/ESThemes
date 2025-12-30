@@ -178,8 +178,14 @@
 			<pos>0.02 0.1</pos>
 			<autoLayout>0 3</autoLayout>
 			<cellProportion>0.73</cellProportion>
+			<!--
+				Add support for a new system by calculating width/height value
+				of it's box art and adding a line below.
+			-->
 			<cellProportion if="{system.name} == 'psp'">0.58</cellProportion>
 			<cellProportion if="{system.name} == 'gba'">1</cellProportion>
+			<cellProportion if="{system.name} == 'gb'">1</cellProportion>
+			<cellProportion if="{system.name} == 'gbc'">1</cellProportion>
 			<cellProportion if="{system.name} == 'psx'">1</cellProportion>
 			<cellProportion if="{system.name} == 'dreamcast'">1</cellProportion>
 			<cellProportion if="{system.name} == 'gbc'">1</cellProportion>
