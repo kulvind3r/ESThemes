@@ -63,8 +63,8 @@
             <size>1 1</size>
             <origin>0 0</origin>
             <color>00000000</color>
-            <logoScale>1.4</logoScale>
-            <logoSize>0.07 0.07</logoSize>
+            <logoScale>1.45</logoScale>
+            <logoSize>0.075 0.075</logoSize>
             <logoRotation>9</logoRotation>
             <logoRotationOrigin>-4.1 0.5</logoRotationOrigin>
             <logoAlignment>left</logoAlignment>
@@ -480,11 +480,10 @@
         </text>
 		<image name="logo">
             <path>./_art/logos/${system.theme}.png</path>
-            <origin>0.5 0.5</origin>
             <linearSmooth>true</linearSmooth>
-            <pos>0.5 0.027</pos>
+            <pos>0.5 0.03</pos>
             <origin>0.5 0.5</origin>
-            <maxSize>0.25 0.04</maxSize>
+            <maxSize>0.25 0.045</maxSize>
         </image>
 		<text name="nameLabel">
 			<visible>false</visible>
